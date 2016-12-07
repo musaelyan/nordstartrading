@@ -1,0 +1,45 @@
+@import "base/__normalize.scss";
+@import "base/__variable.scss";
+@import "base/typography.scss";
+
+@import "base/mixins.scss";
+
+@import "base/buttons.scss";
+@import "base/forms.scss";
+@import "base/grid.scss";
+@import "base/popup.scss";
+
+// подключение анимации
+@import "animate.min.scss";
+
+
+// подключение всех стилей
+
+@import "components/footer.scss";
+@import "components/header.scss";
+@import "components/promo.scss";
+@import "components/menu.scss";
+
+@import "components/about.scss";
+@import "components/advantages.scss";
+
+@import "components/services.scss";
+@import "components/spare-parts.scss";
+
+@import "components/suppliers.scss";
+@import "components/why-us.scss";
+
+
+
+body {
+  background: white;
+  margin: 0px;
+  padding: 0px;
+  min-width: 1200px;
+}
+
+.container {
+  width: 1160px;
+  padding: 0px 20px;
+  margin: 0 auto;
+}

@@ -1,0 +1,14 @@
+$blue: #000953;
+$light-blue: #010b67;
+$grey-text: #424242;
+
+
+// при mobile-first
+$mobile-width-only: "(max-width: 767px)";
+$tablet-width: "min-width: 768px";
+$desktop-width: "min-width: 1200px";
+
+// desktop-first
+$desktop-width: "min-width: 1200px";
+$tablet-width: "min-width: 768px" and "max-width: 1199px";
+$mobile-width: "max-width: 767px";

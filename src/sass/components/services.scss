@@ -1,0 +1,8 @@
+.services {
+  padding: 90px 0;
+  
+  &__title {
+    @include title;
+  }
+
+}
