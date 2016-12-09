@@ -42,4 +42,5 @@ body {
   width: 1160px;
   padding: 0px 20px;
   margin: 0 auto;
+  @include clearfix;
 }

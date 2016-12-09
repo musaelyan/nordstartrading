@@ -16,35 +16,8 @@
   }
 
   &__contacts {
-    float: left;
-    width: 250px;
-  }
-
-  &__lang {
     float: right;
-    width: 150px;
-    text-align: right;
-    font-size: 0;
+    max-width: 250px;
+    margin-left: 100px;
   }
-
-  &__lang-link {
-    color: $blue;
-    font-size: 17px;
-    line-height: 17px;
-    border: 1px solid $blue;
-    display: inline-block;
-    vertical-align: middle;
-    border-radius: 50%;
-    text-decoration: none;
-    width: 30px;
-    height: 16px;
-    padding: 16px 10px;
-
-    &:first-child {
-      margin-right: 20px;
-    }
-  }
-
-
-
 }

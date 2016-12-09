@@ -1,8 +1,54 @@
 .services {
-  padding: 90px 0;
-  
+  padding: 80px 0;
+
   &__title {
     @include title;
+  }
+
+  &__content {
+    @include clearfix;
+  }
+
+  &__info {
+    float: left;
+    width: 560px;
+  }
+
+  &__description {
+    @include description;
+  }
+
+  &__slider {
+    float: right;
+    width: 560px;
+    text-align: right;
+  }
+
+  &__big-slide {
+    width: 560px;
+    height: 370px;
+    background: $light-text;
+    margin-bottom: 10px;
+  }
+
+  &__small-slides {
+    font-size: 0;
+  }
+
+  &__small-slide {
+    display: inline-block;
+    vertical-align: middle;
+    width: 180px;
+    margin-right: 10px;
+    height: 110px;
+    background: $light-text;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  .btn {
+    margin-top: 15px;
   }
 
 }

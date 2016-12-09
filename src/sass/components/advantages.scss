@@ -1,7 +1,43 @@
 .advantages {
-
+  background: $blue;
+  font-size: 0;
 }
 
 .advantage {
+  background: $blue;
+  color: #ffffff;
+  box-sizing: border-box;
+  height: 400px;
+  overflow: hidden;
+  width: 25%;
+  text-align: center;
+  display: inline-block;
+  vertical-align: top;
+  font-size: 15px;
+  padding: 50px 40px 20px;
+
+  &:nth-child(2) {
+    background: $light-blue;
+  }
+
+  &:nth-child(3) {
+    background: $dark-blue;
+  }
+
+  &__title {
+    position: relative;
+    padding-top: 94px;
+    &::before {
+      position: absolute;
+      transform: translateX(-50%);
+      left: 50%;
+      top: 0;
+      content: "";
+      background: url("../img/guarantee.png") no-repeat;
+      width: 74px;
+      height: 76px;
+      background-size: 74px 76px;
+    }
+  }
 
 }

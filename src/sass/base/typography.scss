@@ -2,16 +2,6 @@
   Базовая типографика
 =====================*/
 
-@font-face {
-  font-family: "Bebas Neue Bold";
-  src: local("Bebas Neue Bold"),
-       url("../fonts/bebasneuebold.ttf") format("truetype"),
-       url("../fonts/bebasneuebold.woff") format("woff"),
-       url("../fonts/ptsansbold.woff2") format("woff2");
-  font-weight: normal;
-  font-style: normal;
-}
-
 $base-font: "Roboto", Arial, sans-serif;
 
 body {
@@ -19,6 +9,6 @@ body {
   font-size: 20px;
   line-height: 1.3;
   font-weight: 300;
-  color: $grey-text;
+  color: $text;
   text-transform: none;
 }

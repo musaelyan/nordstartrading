@@ -1,3 +1,20 @@
 .suppliers {
+  font-size: 0;
+}
 
+.supplier {
+  display: inline-block;
+  vertical-align: middle;
+  width: 290px;
+  height: 70px;
+  position: relative;
+  margin-top: 20px;
+
+  img {
+    display: block;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 50%;
+  }
 }

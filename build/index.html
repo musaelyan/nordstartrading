@@ -6,7 +6,7 @@
 		<meta name="keywords" content="keyword1, keywords2">
 		<meta name="description" content="web-page description">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&amp;subset=cyrillic" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&amp;subset=cyrillic" rel="stylesheet">
 		<link rel="stylesheet" href="css/style.min.css">
 		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 
@@ -17,19 +17,15 @@
       <div class="container">
         <div class="header__top-row">
           <div class="header__logo">
-            <img src="img/logo.png" alt="NORD STAR TRADING LIMITED" width="135" height="58">
+            <img src="img/logo.png" srcset="img/logo@2x.png 2x" alt="NORD STAR TRADING LIMITED" width="179" height="72">
           </div>
-          <a href="tel:+85281912070" class="header__contacts header__contacts--email">+852 8191 2070</a>
-          <a href="mailto:info@nordstartrading.com?subject=Сообщение%20с%20сайта" class="header__contacts header__contacts--email">info@nordstartrading.com</a>
           <div class="header__contacts header__contacts--adress">Room 1902(B),19/F, 38 Plaza, 38, Shan Tung St., Mongkok, Kowloon, Hong Kong</div>
-          <div class="header__lang">
-            <a href="#" class="header__lang-link">Rus</a>
-            <a href="#" class="header__lang-link">Eng</a>
-          </div>
+          <a href="mailto:info@nordstartrading.com?subject=Сообщение%20с%20сайта" class="header__contacts header__contacts--email">info@nordstartrading.com</a>
+          <a href="tel:+85281912070" class="header__contacts header__contacts--email">+852 8191 2070</a>
         </div>
       </div>
       <nav class="menu">
-        <div class="container">
+        <div class="container container--menu">
           <ul class="menu__list">
             <li class="menu__item"><a href="" class="menu__link menu__link--active">Пункт меню</a></li>
             <li class="menu__item"><a href="" class="menu__link">Пункт меню</a></li>
@@ -37,6 +33,9 @@
             <li class="menu__item"><a href="" class="menu__link">Пункт меню</a></li>
             <li class="menu__item"><a href="" class="menu__link">Пункт меню</a></li>
           </ul>
+          <div class="menu__lang">
+            <a href="#" class="menu__lang-link">Rus</a> / <a href="#" class="menu__lang-link">Eng</a>
+          </div>
         </div>
       </nav>
     </header>
@@ -54,56 +53,61 @@
         <p class="about__description">Nord Star Trading, Ltd. Is a young but prospective international company formed by enthusiastic professionals with numerous years of experience in supplying equipment, machines, spare parts and other materials from all the corners of the world to any country the client needs.</p>
         <p class="about__description">We are working directly with the factories of the world-wide known brands, like Cummins, CAT, JCB, Hyundai, Terex, Shantui, Wuxi, Sinomud, DongFeng and the others.</p>
         <p class="about__description">We can offer you A, B and C quality class spare parts, just according to your needs. </p>
-      </div>
 
-      <div class="suppliers">
-        <div class="supplier"><img src="" alt=""></div>
-        <div class="supplier"><img src="" alt=""></div>
-        <div class="supplier"><img src="" alt=""></div>
-        <div class="supplier"><img src="" alt=""></div>
-        <div class="supplier"><img src="" alt=""></div>
-        <div class="supplier"><img src="" alt=""></div>
-        <div class="supplier"><img src="" alt=""></div>
-        <div class="supplier"><img src="" alt=""></div>
-        <div class="supplier"><img src="" alt=""></div>
+        <div class="suppliers">
+          <div class="supplier"><img src="img/JCB.png" srcset="img/JCB@2x.png 2x" alt="JCB" width="154" height="60"></div>
+          <div class="supplier"><img src="img/TEREX.jpg" srcset="img/TEREX@2x.jpg 2x" alt="JCB" width="244" height="73"></div>
+          <div class="supplier"><img src="img/JCB.png" srcset="img/JCB@2x.png 2x" alt="JCB" width="154" height="60"></div>
+          <div class="supplier"><img src="img/TEREX.jpg" srcset="img/TEREX@2x.jpg 2x" alt="JCB" width="244" height="73"></div>
+
+          <div class="supplier"><img src="img/JCB.png" srcset="img/JCB@2x.png 2x" alt="JCB" width="154" height="60"></div>
+          <div class="supplier"><img src="img/TEREX.jpg" srcset="img/TEREX@2x.jpg 2x" alt="JCB" width="244" height="73"></div>
+          <div class="supplier"><img src="img/JCB.png" srcset="img/JCB@2x.png 2x" alt="JCB" width="154" height="60"></div>
+          <div class="supplier"><img src="img/TEREX.jpg" srcset="img/TEREX@2x.jpg 2x" alt="JCB" width="244" height="73"></div>
+
+          <div class="supplier"><img src="img/JCB.png" srcset="img/JCB@2x.png 2x" alt="JCB" width="154" height="60"></div>
+          <div class="supplier"><img src="img/TEREX.jpg" srcset="img/TEREX@2x.jpg 2x" alt="JCB" width="244" height="73"></div>
+          <div class="supplier"><img src="img/JCB.png" srcset="img/JCB@2x.png 2x" alt="JCB" width="154" height="60"></div>
+          <div class="supplier"><img src="img/TEREX.jpg" srcset="img/TEREX@2x.jpg 2x" alt="JCB" width="244" height="73"></div>
+        </div>
       </div>
     </section>
 
     <section class="advantages">
-      <div class="container">
         <div class="advantage advantage--guarantee">
           <h3 class="advantage__title">Гарантия качества и цены завода изготовителя</h3>
           <p class="advantage__description">Поставки номенклатуры напрямую с  заводов-изготовителей в Европе, ЮВА и США и по заводским ценам с дилерской скидкой</p>
         </div>
         <div class="advantage advantage--guarantee">
-          <h3 class="advantage__title">Гарантия качества и цены завода изготовителя</h3>
-          <p class="advantage__description">Поставки номенклатуры напрямую с заводов-изготовителей в Европе, ЮВА и США и по заводским ценам с дилерской скидкой</p>
+          <h3 class="advantage__title">Экономия до 35% в год </h3>
+          <p class="advantage__description">Экономия бюджетных средств предприятий, заложенных под закупку оборудования и запчастей по рыночным ценам за счет прямых поставок от производителей.</p>
         </div>
         <div class="advantage advantage--guarantee">
-          <h3 class="advantage__title">Гарантия качества и цены завода изготовителя</h3>
-          <p class="advantage__description">Поставки номенклатуры напрямую с  заводов-изготовителей в Европе, ЮВА и США и по заводским ценам с дилерской скидкой</p>
+          <h3 class="advantage__title">Поставка в любую точку мира</h3>
+          <p class="advantage__description">Отработанные схемы поставок в санкционные страны, наши представители компании работают в странах ЮВА, Ближнего Востока, СНГ и Африки.</p>
         </div>
         <div class="advantage advantage--guarantee">
-          <h3 class="advantage__title">Гарантия качества и цены завода изготовителя</h3>
-          <p class="advantage__description">Поставки номенклатуры напрямую с  заводов-изготовителей в Европе, ЮВА и США и по заводским ценам с дилерской скидкой</p>
+          <h3 class="advantage__title">Помощь в утилизации</h3>
+          <p class="advantage__description">Помощь в реализации б/у оборудования и техники, невостребованной химии, а также отходов горнорудного производства.</p>
         </div>
-      </div>
     </section>
 
     <section class="services">
       <div class="container">
         <div class="services__content">
-          <h2 class="services__title">Our services</h2>
-          <p class="services__description">We are providing with all the supplying and procurement procedures and procedures our client needs: tendering, supplying, organization of the supply chain & logistics, after-sales service, customs procedures consulting and assistance. </p>
-          <p class="services__description">You can either place your order on an exact item with us to be supplied, or you can ask us to explore the market and find the best supply solution for you – after this you can either purchase what you need from the supplier/manufacturer you choose according to our biding results, or ask us to be your supplier.</p>
-          <a href="#" class="btn">Place your order</a>
-        </div>
-        <div class="services__slider">
-          <div class="services__big-slide"><img src="" alt=""></div>
-          <div class="services__small-slides">
-            <a href="" class="services__small-slide"><img src="" alt=""></a>
-            <a href="" class="services__small-slide"><img src="" alt=""></a>
-            <a href="" class="services__small-slide"><img src="" alt=""></a>
+          <div class="services__info">
+            <h2 class="services__title">Our services</h2>
+            <p class="services__description">We are providing with all the supplying and procurement procedures and procedures our client needs: tendering, supplying, organization of the supply chain & logistics, after-sales service, customs procedures consulting and assistance. </p>
+            <p class="services__description">You can either place your order on an exact item with us to be supplied, or you can ask us to explore the market and find the best supply solution for you – after this you can either purchase what you need from the supplier/manufacturer you choose according to our biding results, or ask us to be your supplier.</p>
+            <a href="#" class="btn">Place your order</a>
+          </div>
+          <div class="services__slider">
+            <div class="services__big-slide"><img src="" alt=""></div>
+            <div class="services__small-slides">
+              <a href="" class="services__small-slide"><img src="" alt=""></a>
+              <a href="" class="services__small-slide"><img src="" alt=""></a>
+              <a href="" class="services__small-slide"><img src="" alt=""></a>
+            </div>
           </div>
         </div>
 
@@ -111,53 +115,61 @@
           <div class="spare-part">
             <img src="" alt="">
             <div class="spare-part__order">
-              <div class="spare-part__name"></div>
+              <div class="spare-part__name">spare-part</div>
               <a href="#" class="btn">Order now</a>
             </div>
           </div>
           <div class="spare-part">
             <img src="" alt="">
             <div class="spare-part__order">
-              <div class="spare-part__name"></div>
+              <div class="spare-part__name">spare-part</div>
               <a href="#" class="btn">Order now</a>
             </div>
           </div>
           <div class="spare-part">
             <img src="" alt="">
             <div class="spare-part__order">
-              <div class="spare-part__name"></div>
+              <div class="spare-part__name">spare-part</div>
               <a href="#" class="btn">Order now</a>
             </div>
           </div>
           <div class="spare-part">
             <img src="" alt="">
             <div class="spare-part__order">
-              <div class="spare-part__name"></div>
+              <div class="spare-part__name">spare-part</div>
               <a href="#" class="btn">Order now</a>
             </div>
           </div>
           <div class="spare-part">
             <img src="" alt="">
             <div class="spare-part__order">
-              <div class="spare-part__name"></div>
+              <div class="spare-part__name">spare-part</div>
               <a href="#" class="btn">Order now</a>
             </div>
           </div>
           <div class="spare-part">
             <img src="" alt="">
             <div class="spare-part__order">
-              <div class="spare-part__name"></div>
+              <div class="spare-part__name">spare-part</div>
               <a href="#" class="btn">Order now</a>
             </div>
           </div>
           <div class="spare-part">
             <img src="" alt="">
             <div class="spare-part__order">
-              <div class="spare-part__name"></div>
+              <div class="spare-part__name">spare-part</div>
+              <a href="#" class="btn">Order now</a>
+            </div>
+          </div>
+          <div class="spare-part">
+            <img src="" alt="">
+            <div class="spare-part__order">
+              <div class="spare-part__name">spare-part</div>
               <a href="#" class="btn">Order now</a>
             </div>
           </div>
         </div>
+        <a href="#" class="btn btn--spare">Do you want another?</a>
       </div>
     </section>
 
@@ -172,15 +184,17 @@
     </section>
 
     <footer class="footer">
-      <div class="map"></div>
+      <div class="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d3690.9607149955864!2d114.16716081483193!3d22.317325447916506!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1s+38+Plaza%2C+38%2C+Shan+Tung+St.%2C+Mongkok%2C+Kowloon%2C+Hong+Kong!5e0!3m2!1sru!2sru!4v1481138504741" allowfullscreen></iframe>
+      </div>
       <div class="footer__top-row">
         <div class="container">
           <div class="footer__logo">
-            <img src="img/logo.png" alt="NORD STAR TRADING LIMITED" width="" height="">
+            <img src="img/logo-footer.png" srcset="img/logo-footer@2x.png 2x" alt="NORD STAR TRADING LIMITED" width="179" height="72">
           </div>
-          <a href="tel:+85281912070" class="footer__contacts footer__contacts--email">+852 8191 2070</a>
-          <a href="mailto:info@nordstartrading.com?subject=Сообщение%20с%20сайта" class="footer__contacts footer__contacts--email">info@nordstartrading.com</a>
           <div class="footer__contacts footer__contacts--adress">Room 1902(B),19/F, 38 Plaza, 38, Shan Tung St., Mongkok, Kowloon, Hong Kong</div>
+          <a href="mailto:info@nordstartrading.com?subject=Сообщение%20с%20сайта" class="footer__contacts footer__contacts--email">info@nordstartrading.com</a>
+          <a href="tel:+85281912070" class="footer__contacts footer__contacts--email">+852 8191 2070</a>
           <div class="footer__lang">
             <a href="#" class="footer__lang-link">Rus</a>
             <a href="#" class="footer__lang-link">Eng</a>
@@ -193,8 +207,6 @@
         </div>
       </div>
     </footer>
-
-
 
     <script src="js/script.min.js"></script>
 	</body>
