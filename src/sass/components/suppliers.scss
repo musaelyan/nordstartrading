@@ -1,20 +1,43 @@
 .suppliers {
   font-size: 0;
+  background: #fbfbfb;
+  text-align: center;
+
+  &__row {
+    border-top: 2px solid #f6f5f5;
+    &:last-child {
+      border-bottom: 2px solid #f6f5f5;
+    }
+  }
 }
 
 .supplier {
   display: inline-block;
   vertical-align: middle;
-  width: 290px;
-  height: 70px;
+  width: 16.666666%;
+  box-sizing: border-box;
   position: relative;
-  margin-top: 20px;
+  padding: 45px 2.6%;
+
+  &:after {
+    position: absolute;
+    right: 0;
+    height: 140px;
+    width: 2px;
+    background: #f6f5f5;
+    content: "";
+    transform: translateY(-50%);
+    top: 50%;
+  }
+
+  &:last-child:after {
+    display: none;
+  }
 
   img {
     display: block;
-    position: absolute;
-    transform: translate(-50%,-50%);
-    left: 50%;
-    top: 50%;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
   }
 }

@@ -1,20 +1,51 @@
 .advantages {
   background: $blue;
   font-size: 0;
+  @include clearfix;
+
+  &__block {
+    width: 50%;
+    float: left;
+    box-sizing: border-box;
+
+    &--text {
+      padding: 80px 6% 60px;
+    }
+
+    &--image {
+      background-color: $blue;
+      background-image: url("../img/advantages-bg.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
+  }
 }
 
 .advantage {
   background: $blue;
   color: #ffffff;
   box-sizing: border-box;
-  height: 400px;
   overflow: hidden;
-  width: 25%;
-  text-align: center;
+  width: 50%;
+  text-align: left;
   display: inline-block;
   vertical-align: top;
   font-size: 15px;
-  padding: 50px 40px 20px;
+  position: relative;
+  padding-left: 100px;
+
+  &::before {
+    position: absolute;
+    transform: translateY(-50%);
+    left: 0;
+    top: 50%;
+    content: "";
+    background: url("../img/guarantee.png") no-repeat;
+    width: 74px;
+    height: 76px;
+    background-size: 74px 76px;
+  }
 
   &:nth-child(2) {
     background: $light-blue;
@@ -23,21 +54,4 @@
   &:nth-child(3) {
     background: $dark-blue;
   }
-
-  &__title {
-    position: relative;
-    padding-top: 94px;
-    &::before {
-      position: absolute;
-      transform: translateX(-50%);
-      left: 50%;
-      top: 0;
-      content: "";
-      background: url("../img/guarantee.png") no-repeat;
-      width: 74px;
-      height: 76px;
-      background-size: 74px 76px;
-    }
-  }
-
 }

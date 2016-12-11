@@ -10,14 +10,70 @@
   }
 
   &__logo {
-    width: 135px;
+    width: 179px;
     float: left;
     margin-right: 100px;
   }
 
-  &__contacts {
+  &__contacts-container {
     float: right;
-    max-width: 250px;
-    margin-left: 100px;
+    font-size: 0;
+    margin-top: 7px;
+  }
+
+  &__contacts {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 70px;
+    font-size: 15px;
+    text-decoration: none;
+    color: $text;
+    transition: all 0.3s ease;
+
+    &:last-child {
+      margin-right: 0px;
+    }
+
+    &--adress {
+      width: 243px;
+
+      span {
+        width: 195px;
+      }
+    }
+
+    &--email {
+      width: 225px;
+    }
+
+    &--phone {
+      width: 160px;
+    }
+
+    svg {
+      width: 28px;
+      height: auto;
+      display: inline-block;
+      vertical-align: middle;
+      margin-right: 15px;
+      fill: $blue;
+    }
+
+    span {
+      display: inline-block;
+      vertical-align: middle;
+      text-align: left;
+    }
+
+    &:hover {
+      color: $light-blue;
+      svg {
+        fill: $light-blue;
+      }
+    }
+
+    &--adress:hover {
+      color: $text;
+    }
   }
 }

@@ -1,5 +1,24 @@
 .about {
-  padding: 80px 0;
+  font-size: 0;
+  @include clearfix;
+
+  &__block {
+    width: 50%;
+    float: left;
+    box-sizing: border-box;
+
+    &--text {
+      padding: 80px 6% 60px;
+    }
+
+    &--image {
+      background-color: $blue;
+      background-image: url("../img/about-bg.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
+  }
 
   &__title {
     @include title;
@@ -7,6 +26,27 @@
 
   &__description {
     @include description;
+    position: relative;
+  }
+
+  &__list {
+    list-style: none;
+    padding: 0;
+  }
+
+  li {
+    padding-left: 26px;
+  }
+
+  li:after {
+    position: absolute;
+    background: $light-blue;
+    height: 2px;
+    width: 13px;
+    left: 0;
+    transform: translateY(-50%);
+    top: 50%;
+    content: "";
   }
 
 }
