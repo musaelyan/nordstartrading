@@ -28,8 +28,8 @@
 
 @import "components/suppliers.scss";
 @import "components/why-us.scss";
-
-
+@import "components/experience.scss";
+@import "components/steps.scss";
 
 body {
   background: white;
@@ -43,4 +43,33 @@ body {
   padding: 0px 20px;
   margin: 0 auto;
   @include clearfix;
+
+  &--header {
+    position: relative;
+  }
+
+  @media ($tablet-1024) {
+    width: 984px;
+    padding: 0px 20px;
+  }
+
+  @media ($tablet-768) {
+    width: 738px;
+    padding: 0px 15px;
+
+    &--menu {
+      padding: 0;
+      width: 100%;
+    }
+  }
+
+  @media ($mobile-width) {
+    width: 94%;
+    padding: 0px 3%;
+
+    &--menu {
+      padding: 0;
+      width: 100%;
+    }
+  }
 }

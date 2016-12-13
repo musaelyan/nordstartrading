@@ -17,7 +17,7 @@
 
 .overlay:target {
     visibility: visible; /* Делает видимым */
-    opacity: 0.8;    /* Фон становится полностью прозрачным */
+    opacity: 0.5;    /* Фон становится полностью прозрачным */
 }
 
 .popup {
@@ -26,16 +26,25 @@
     z-index: 9999;    /* z-index */
     transform: translateX(-50%);
     left: 50%;
-    top: 20px;
-
-    width: 300px;
+    top: 30px;
+    width: 500px;
     text-align: center;
     box-sizing: border-box;
-    padding: 40px 20px;
-    background-color: #f4f4f4; /* Фон */
-    color: black; /* Цвет */
+    padding: 40px 40px;
+    background-color: white; /* Фон */
+    color: $text; /* Цвет */
     font-size: 17px;
-    font-weight: normal;
+    font-weight: 300;
+    border-top: 3px solid $blue;
+    border-bottom: 8px solid $blue;
+
+    @media ($tablet-768) {
+      top: 5px;
+      width: 320px;
+      padding: 20px 20px 10px;
+      font-size: 14px;
+    }
+
 }
 
 .overlay:target+.popup {
@@ -47,7 +56,7 @@
   display: block;
   width: 3px;
   height: 20px;
-  background: red;
+  background: $blue;
   position: absolute;
   top: 7px;
   right: 15px;
@@ -61,7 +70,84 @@
   transform: rotate(-90deg);
   width: 3px;
   height: 20px;
-  background: red;
+  background: $blue;
   position: absolute;
   top: 0;
+}
+
+.popup__description {
+  font-size: 20px;
+  font-weight: 400;
+  @media ($tablet-768) {
+    font-size: 16px;
+  }
+}
+
+.popup__form {
+  margin-top: 20px;
+  @media ($tablet-768) {
+    margin-top: 10px;
+  }
+}
+
+.popup__form-line {
+  margin-top: 20px;
+  @media ($tablet-768) {
+    margin-top: 10px;
+  }
+
+  label {
+    display: block;
+    margin-bottom: 7px;
+    text-align: left;
+  }
+
+  input,
+  textarea {
+    display: block;
+    border: none;
+    outline: none;
+    border: 2px solid #e1dddd;
+    padding: 10px;
+    height: 50px;
+    font-size: 17px;
+    border-radius: 3px;
+
+    @media ($tablet-768) {
+      font-size: 14px;
+      height: 40px;
+    }
+
+    &:hover,
+    &:hover:focus,
+    &:focus {
+      border: 2px solid $blue;
+      box-shadow: 0 1px 3px 3px #d8daf0;
+    }
+  }
+
+  textarea {
+    height: 100px;
+    resize: none;
+    @media ($tablet-768) {
+      height: 70px;
+    }
+  }
+}
+
+.popup__footer {
+  margin-top: 20px;
+
+  span {
+    display: block;
+    font-weight: 400;
+    font-size: 20px;
+  }
+
+  @media ($tablet-768) {
+    margin-top: 10px;
+    span {
+      font-size: 16px;
+    }
+  }
 }

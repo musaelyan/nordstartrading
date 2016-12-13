@@ -6,6 +6,9 @@ $text: #050719;
 $light-text: #b2b8ef;
 
 // desktop-first
-$desktop-width: "min-width: 1200px";
-$tablet-width: "min-width: 768px" and "max-width: 1199px";
+$desktop-1920: "min-width: 1601px";
+$desktop-1600: "min-width: 1367px" and "max-width: 1600px";
+$desktop-1366: "min-width: 1200px" and "max-width: 1366px";
+$tablet-1024: "min-width: 1024px" and "max-width: 1199px";
+$tablet-768: "min-width: 768px" and "max-width: 1023px";
 $mobile-width: "max-width: 767px";

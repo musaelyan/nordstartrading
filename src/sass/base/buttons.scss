@@ -14,10 +14,12 @@
 
   &:hover {
     background: $light-blue;
+    box-shadow: 0 1px 3px 3px #d8daf0;
   }
 
   &:active {
     background: $dark-blue;
+    box-shadow: none;
   }
 
   &--white {
@@ -28,6 +30,7 @@
     &:hover {
       background: rgba(255, 255, 255, 1);
       color: $dark-blue;
+      box-shadow: none;
     }
   }
 

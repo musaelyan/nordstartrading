@@ -11,4 +11,7 @@ body {
   font-weight: 300;
   color: $text;
   text-transform: none;
+  @media ($tablet-1024) {
+    font-size: 15px;
+  }
 }

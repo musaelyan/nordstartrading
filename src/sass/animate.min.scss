@@ -21,7 +21,7 @@
 .fadeIn{
   -webkit-animation-name: none;
   animation-name: none;
-  @media ($desktop-width) {
+  @media ($desktop-1366) {
     -webkit-animation-name: fadeIn;
     animation-name:fadeIn;
   }
@@ -32,7 +32,7 @@
 .fadeInDown{
   -webkit-animation-name: none;
   animation-name: none;
-  @media ($desktop-width) {
+  @media ($desktop-1366) {
     -webkit-animation-name: fadeInDown;
     animation-name:fadeInDown;
   }
@@ -43,7 +43,7 @@
   .fadeInLeft{
     -webkit-animation-name: none;
     animation-name: none;
-    @media ($desktop-width) {
+    @media ($desktop-1366) {
       -webkit-animation-name: fadeInLeft;
       animation-name:fadeInLeft;
     }
@@ -54,7 +54,7 @@
   .fadeInRight {
     -webkit-animation-name: none;
     animation-name: none;
-    @media ($desktop-width) {
+    @media ($desktop-1366) {
       -webkit-animation-name: fadeInRight;
       animation-name:fadeInRight;
     }
@@ -65,7 +65,7 @@
   .fadeInUp{
     -webkit-animation-name: none;
     animation-name: none;
-    @media ($desktop-width) {
+    @media ($desktop-1366) {
       -webkit-animation-name:fadeInUp;
       animation-name:fadeInUp;
     }

@@ -13,12 +13,31 @@
     width: 179px;
     float: left;
     margin-right: 100px;
+
+    @media ($tablet-1024) {
+      width: 140px;
+      margin-right: 60px;
+    }
+
+    @media ($tablet-768) {
+      float: none;
+      width: 179px;
+    }
+
+    @media ($mobile-width) {
+      margin-bottom: 25px;
+    }
+
+
   }
 
   &__contacts-container {
     float: right;
     font-size: 0;
     margin-top: 7px;
+    @media ($tablet-768) {
+      float: none;
+    }
   }
 
   &__contacts {
@@ -29,16 +48,23 @@
     text-decoration: none;
     color: $text;
     transition: all 0.3s ease;
+    @media ($tablet-1024) {
+      margin-right: 50px;
+    }
+    @media ($mobile-width) {
+      display: block;
+      margin-top: 10px;
+    }
 
     &:last-child {
       margin-right: 0px;
     }
 
     &--adress {
-      width: 243px;
+      width: 250px;
 
       span {
-        width: 195px;
+        width: 200px;
       }
     }
 

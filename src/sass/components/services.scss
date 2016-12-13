@@ -1,6 +1,14 @@
 .services {
   padding: 80px 0;
 
+  @media ($tablet-1024) {
+    padding: 50px 0;
+  }
+
+  @media ($mobile-width) {
+    padding: 30px 0;
+  }
+
   &__title {
     @include title;
   }
@@ -12,6 +20,14 @@
   &__info {
     float: left;
     width: 560px;
+    @media ($tablet-1024) {
+      width: 400px;
+    }
+    @media ($tablet-768) {
+      float: none;
+      width: 100%;
+      margin: 0 auto;
+    }
   }
 
   &__description {
@@ -22,13 +38,28 @@
     float: right;
     width: 560px;
     text-align: right;
+
+    @media ($tablet-768) {
+      float: none;
+      margin: 0 auto;
+      margin-top: 25px;
+    }
+
+    @media ($mobile-width) {
+      display: none;
+    }
+
   }
 
   &__big-slide {
     width: 560px;
     height: 370px;
-    background: $light-text;
+    background-color: $light-text;
     margin-bottom: 10px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("../img/big-slide1.jpg");
   }
 
   &__small-slides {
@@ -41,14 +72,36 @@
     width: 180px;
     margin-right: 10px;
     height: 110px;
-    background: $light-text;
+    background-color: $light-text;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     &:last-child {
       margin-right: 0;
+    }
+
+    &:nth-child(1) {
+      background-image: url("../img/small-slide1.jpg");
+    }
+
+    &:nth-child(2) {
+      background-image: url("../img/small-slide2.jpg");
+    }
+
+    &:nth-child(3) {
+      background-image: url("../img/small-slide3.jpg");
     }
   }
 
   &__btn {
     margin-top: 15px;
+    @media ($tablet-768) {
+      margin-top: 10px;
+      margin-bottom: 25px;
+      display: block;
+      width: 200px;
+      margin: 0 auto;
+    }
   }
 
 }

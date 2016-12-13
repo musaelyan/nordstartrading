@@ -1,57 +1,133 @@
 .advantages {
-  background: $blue;
+  background: white;
   font-size: 0;
   @include clearfix;
+  border-bottom: 2px solid #f6f5f5;
+  color: $text;
 
   &__block {
     width: 50%;
     float: left;
     box-sizing: border-box;
+    @media ($tablet-768) {
+      width: 100%;
+      float: none;
+    }
 
     &--text {
-      padding: 80px 6% 60px;
+      padding: 60px 3% 60px;
+      @media ($desktop-1366) {
+        padding: 60px 2% 60px;
+      }
+      @media ($tablet-1024) {
+        padding: 20px 4%;
+      }
+      @media ($tablet-768) {
+        padding: 50px 30px 40px;
+        margin: 0 auto;
+        width: 768px;
+      }
+      @media ($mobile-width) {
+        width: 94%;
+        padding: 20px 3%;
+      }
     }
 
     &--image {
       background-color: $blue;
-      background-image: url("../img/advantages-bg.jpg");
+      background-image: url("../img/advantages-bg-1920.jpg");
       background-repeat: no-repeat;
       background-size: cover;
-      background-position: center;
+      background-position: top left;
+      @media ($desktop-1600) {
+        background-image: url("../img/advantages-bg-1600.jpg");
+      }
+      @media ($desktop-1366) {
+        background-image: url("../img/advantages-bg-1366.jpg");
+      }
+      @media ($tablet-1024) {
+        background-image: url("../img/advantages-bg-1024.jpg");
+      }
+      @media ($tablet-768) {
+        display: none;
+      }
     }
   }
 }
 
 .advantage {
-  background: $blue;
-  color: #ffffff;
   box-sizing: border-box;
   overflow: hidden;
-  width: 50%;
+  width: 45%;
   text-align: left;
   display: inline-block;
   vertical-align: top;
   font-size: 15px;
   position: relative;
-  padding-left: 100px;
+  padding-left: 70px;
+  margin-right: 10%;
+  margin-top: 25px;
+
+  @media ($tablet-1024) {
+    padding-left: 0px;
+    padding-top: 60px;
+    font-size: 14px;
+  }
+
+  @media ($mobile-width) {
+    width: 100%;
+    margin-right: 0;
+  }
+
+  &:nth-child(2n) {
+    margin-right: 0%;
+  }
 
   &::before {
     position: absolute;
-    transform: translateY(-50%);
     left: 0;
-    top: 50%;
+    top: 10px;
     content: "";
-    background: url("../img/guarantee.png") no-repeat;
-    width: 74px;
-    height: 76px;
-    background-size: 74px 76px;
+    width: 50px;
+    height: 50px;
+    background-size: 50px 50px;
+    background-repeat: no-repeat;
+    @media ($tablet-1024) {
+      top: 0;
+    }
   }
 
-  &:nth-child(2) {
-    background: $light-blue;
+  &--delivery:before {
+    background-image: url("../img/delivery-truck.svg");
   }
 
-  &:nth-child(3) {
-    background: $dark-blue;
+  &--utilization:before {
+    background-image: url("../img/recycled-bag.svg");
   }
+
+  &--mining:before {
+    background-image: url("../img/mine.svg");
+  }
+
+  &--world:before {
+    background-image: url("../img/worldwide.svg");
+  }
+
+  &--fast:before{
+    background-image: url("../img/stopwatch.svg");
+  }
+
+  &--yes:before{
+    background-image: url("../img/yes-button-circular-outline.svg");
+  }
+
+  &__title {
+    margin: 0;
+    font-weight: 400;
+    font-size: 18px;
+    @media ($tablet-1024) {
+      font-size: 17px;
+    }
+  }
+
 }

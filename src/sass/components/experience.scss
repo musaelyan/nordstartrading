@@ -1,0 +1,54 @@
+.experience {
+  width: 100%;
+  font-size: 0;
+  background: $dark-blue;
+  color: white;
+
+  &__block {
+    width: 33.333333%;
+    display: inline-block;
+    vertical-align: top;
+    box-sizing: border-box;
+    padding: 50px 8%;
+    text-align: center;
+
+    @media ($tablet-1024) {
+      padding: 50px 5%;
+    }
+
+    @media ($mobile-width) {
+      display: block;
+      width: 100%;
+      padding: 50px 7%;
+    }
+
+
+    &--central {
+      background: $blue;
+    }
+  }
+
+  &__nubmer {
+    font-size: 55px;
+    @media ($tablet-1024) {
+      font-size: 40px;
+    }
+  }
+
+  &__title {
+    font-size: 20px;
+    margin: 0;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    @media ($tablet-1024) {
+      font-size: 17px;
+    }
+  }
+
+  &__description {
+    font-size: 15px;
+    @media ($tablet-1024) {
+      font-size: 14px;
+    }
+  }
+}
