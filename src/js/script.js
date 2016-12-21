@@ -51,3 +51,13 @@ humburger.addEventListener("click", function(event) {
   humburger.classList.toggle("menu__toggle--opened");
   menu.classList.toggle("menu--opened");
 });
+
+var slides = document.querySelectorAll(".promo__slide");
+var currentSlide = 0;
+var slideInterval = setInterval(nextSlide,5000);
+
+function nextSlide() {
+	slides[currentSlide].className = 'promo__slide';
+	currentSlide = (currentSlide+1)%slides.length;
+	slides[currentSlide].className = 'promo__slide promo__slide--show';
+}

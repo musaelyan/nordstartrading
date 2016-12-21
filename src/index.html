@@ -1,16 +1,16 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 	<head>
 		<meta charset="utf-8">
 		<title>NORD STAR TRADING LIMITED</title>
-		<meta name="keywords" content="горное оборудование, горная техника, запчасти для горной техники, поставка горного оборудования, поставка горной техники, поставка запчастей для горной техники, золотодобыча, переработка руды, геологическое оборудование, буровое оборудование, запчасти на Терекс, запчасти на Шантуй, запчасти Камминз, запчасти Донгфенг, запчасти CAT, запчасти JCB, запчасти Ytong, запчасти Бонни, китайские шины">
-		<meta name="description" content="Поставка горнодобывающего оборудования, горной техники, экскаваторов, самосвалов, грузовиков, бульдозеров, грейдеров, погрузчиков, буровых, двигателей, шин и запчастей">
+		<meta name="keywords" content="mining equipment, mining machines, spare parts for mining machines, mining equipment supply, mining machines supply, mining equipment spare parts supply, gold mining, ore processing, geological equipment, drilling equipment, Terex spare parts, Shantui spare parts, Cummins spare parts, DongFeng spare parts, CAT spare parts, JCB spare parts, Bonny spare parts, Ytong spare parts, Chinese Tires">
+		<meta name="description" content="Supply of mining equipment, mining machines, excavators, trucks, bulldozers, graders, loaders, drilling machines, engines, tires and spare parts">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&amp;subset=cyrillic" rel="stylesheet">
 		<link rel="stylesheet" href="css/style.min.css">
 		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 	</head>
-	<body>
+	<body id="top">
 
     <header class="header">
       <div class="container container--header">
@@ -39,20 +39,20 @@
           </div>
         </div>
       </div>
-      <nav class="menu" id="navigation-menu">
+      <nav class="menu banner" id="navigation-menu">
         <div class="container container--menu">
           <ul class="menu__list">
-            <li class="menu__item"><a href="#section-1" class="menu__link">О нас</a></li>
-            <li class="menu__item"><a href="#section-2" class="menu__link">Поставщики</a></li>
-            <li class="menu__item"><a href="#section-3" class="menu__link">Преимущества</a></li>
-            <li class="menu__item"><a href="#section-4" class="menu__link">Наши услуги</a></li>
-            <li class="menu__item"><a href="#section-5" class="menu__link">Опыт</a></li>
-            <li class="menu__item"><a href="#section-6" class="menu__link">Этапы сотрудничества</a></li>
-            <li class="menu__item"><a href="#section-7" class="menu__link">Контакты</a></li>
+            <li class="menu__item"><a href="#section-1" class="menu__link">About us</a></li>
+            <li class="menu__item"><a href="#section-2" class="menu__link">Suppliers</a></li>
+            <li class="menu__item"><a href="#section-3" class="menu__link">Advantages</a></li>
+            <li class="menu__item"><a href="#section-4" class="menu__link">Our services</a></li>
+            <li class="menu__item"><a href="#section-5" class="menu__link">Experience</a></li>
+            <li class="menu__item"><a href="#section-6" class="menu__link">Steps of cooperation</a></li>
+            <li class="menu__item"><a href="#section-7" class="menu__link">Contacts</a></li>
           </ul>
           <div class="menu__lang">
-            <a class="menu__lang-link">Rus</a>
-            <a href="index-eng.html" class="menu__lang-link">Eng</a>
+            <a href="index-ru.html" class="menu__lang-link">Rus</a>
+            <a class="menu__lang-link">Eng</a>
           </div>
         </div>
       </nav>
@@ -61,57 +61,63 @@
     <a href="#close" class="overlay" id="RequestCall"></a>
       <div class="popup">
         <a href="#close" class="popup-close">крестик</a>
-        <p class="popup__description">Оставьте заявку, и наш специалист свяжется с Вами, чтобы ответить на Ваши вопросы</p>
+        <p class="popup__description">Send us Your request – and<br>we will contact You soon</p>
         <div class="popup__form">
           <form method="post" action="send.php">
             <input type="hidden" class="hvalue" name="section" value="Заказать звонок">
             <div class="popup__form-line">
-              <label for="name">Введите Ваше имя:</label>
-              <input class="form__field" type="text" placeholder="Иванов Иван Иванович" name="name" id="name" required>
+              <label for="name">Your name:</label>
+              <input class="form__field" type="text" placeholder="John Gold" name="name" id="name" required>
             </div>
             <div class="popup__form-line">
-              <label for="phone">Введите номер телефона / email:</label>
-              <input class="form__field" type="text" placeholder="info@nordstartrading.com" name="phone" id="phone" required>
+              <label for="phone">Your contacts:</label>
+              <input class="form__field" type="text" placeholder="e-mail / tel." name="phone" id="phone" required>
             </div>
             <div class="popup__form-line">
-              <label for="message">Комментарий:</label>
-              <textarea name="message" id="message" placeholder="Я хочу заказать..."></textarea>
+              <label for="message">Comments:</label>
+              <textarea name="message" id="message" placeholder="I would like to order…"></textarea>
             </div>
             <div class="popup__form-line">
-              <button class="btn popup__btn" type="submit">Получить консультацию</button>
+              <button class="btn popup__btn" type="submit">Send request</button>
             </div>
           </form>
         </div>
-        <div class="popup__footer">Или позвоните нам по телефону: <span>+852 8191 2070</span></div>
+        <div class="popup__footer">Or just call us: <span>+852 8191 2070</span></div>
       </div>
 
     <a href="#close" class="overlay" id="thanks"></a>
       <div class="popup">
-        <div class="popup__description">Спасибо за оставленную заявку! Мы перезвоним Вам в самое ближайшее время.</div>
-        <div class="popup__form-line"><a class="btn btn--popup" href="#close">Вернуться на сайт</a></div>
+        <div class="popup__description">Thank You for Your request! We will contact you soon!</div>
+        <div class="popup__form-line"><a class="btn btn--popup" href="#close">OK</a></div>
       </div>
 
     <section class="promo">
-      <div class="container">
-        <h1 class="promo__title">Поставка горного оборудования и материалов напрямую от производителей в любую точку мира </h1>
-        <a href="#RequestCall" class="js-set-hvalue btn btn--white" data-hvalue="Первый промо-блок">Узнать подробнее</a>
+      <div class="promo__slider">
+        <div class="promo__slide promo__slide--show"></div>
+        <div class="promo__slide"></div>
+      </div>
+      <div class="promo__content">
+        <h1 class="promo__title">Supply of mining equipment & materials directly from manufacturers to any part of the world</h1>
+        <a href="#RequestCall" class="js-set-hvalue btn btn--white" data-hvalue="Первый промо-блок">Know more</a>
       </div>
     </section>
 
-    <section class="about" id="section-1">
+    <a id="showHere"></a>
+
+    <section class="about" id="section-1" >
       <div class="about__block about__block--text">
-        <h2 class="about__title">О нас</h2>
-        <p class="about__description"><span>Nord Star Trading, Ltd.</span> – молодая, но амбициозная международная компания, основанная профессионалами, обладающими многолетним опытом работы с оборудованием, техникой, запчастями и самыми разнообразными группами материалов, закупаемыми на 5 континентах и поставляемыми в любую точку мира.</p>
-        <p class="about__description">Мы работаем напрямую с компаниями-производителями всемирно известных брендов оборудования: Cummins, CAT, JCB, Hyundai, Terex, Shantui, Wuxi, Sinomud, DongFeng, Everdigm и многими другими.</p>
-        <p class="about__description"><span>Основные направления нашей деятельности связаны с поставкой:</span></p>
+        <h2 class="about__title">ABOUT US</h2>
+        <p class="about__description"><span>Nord Star Trading, Ltd.</span> is a young but prospective international company formed by enthusiastic professionals with numerous years of experience in supplying equipment, machines, spare parts and other materials from all the corners of the world to any country the client needs.</p>
+        <p class="about__description">We are working directly with the factories of the world-wide known brands, like Cummins, CAT, JCB, Hyundai, Terex, Shantui, Wuxi, Sinomud, DongFeng, Everdigm and the others.</p>
+        <p class="about__description"><span>Our main activities are related to the supply of:</span></p>
         <ul class="about__list">
-          <li class="about__description">горнодобывающей техники (бульдозеры, буровые, экскаваторы, самосвалы, краны, манипуляторы, погрузчики и др.)</li>
-          <li class="about__description">оборудования (оборудование и узлы для фабрик по переработке руды, дробильное оборудование, лабораторное оборудование для золотодобывающих рудников, оборудование, приборы и аксессуары для геологии, геофизики и бурения)</li>
-          <li class="about__description">запчастей</li>
-          <li class="about__description">химии и ГСМ (смазки, бура, известь, флоккулянт, сода, активированный уголь, цианид и др.)</li>
-          <li class="about__description">других сопутствующих материалов</li>
+          <li class="about__description">mining machines (bulldozers, drilling rigs, excavators, dump trucks, cranes, manipulators, loaders, etc.)</li>
+          <li class="about__description">equipment (mining factories equipment; crushing equipment; gold-mining laboratory equipment; geological, geophysics and drilling equipment, tools and materials)</li>
+          <li class="about__description">spare parts</li>
+          <li class="about__description">chemicals & oils (greases; borax; lime; flocculent; soda ash; activated carbon; cyanide, etc.)</li>
+          <li class="about__description">other associated materials</li>
         </ul>
-        <p class="about__description">В соответствии с вашими запросами и потребностями мы готовы предложить поставку запчастей классов качества A, B и C.</p>
+        <p class="about__description">We can offer you A, B and C quality class spare parts, just according to your needs.</p>
       </div>
       <div class="about__block about__block--image"></div>
     </section>
@@ -140,28 +146,28 @@
       <div class="advantages__block advantages__block--image"></div>
       <div class="advantages__block advantages__block--text">
         <div class="advantage advantage--delivery">
-          <h3 class="advantage__title">Прямые поставки</h3>
-          <p class="advantage__description">с заводов-изготовителей в Европе, ЮВА и США (заводская гарантия качества, заводские цены с дилерской скидкой)</p>
+          <h3 class="advantage__title">Direct supply</h3>
+          <p class="advantage__description">from the factories located in EU, US and Asia (manufacturer warranty, original quality, manufacturer prices with dealer discounts)</p>
         </div>
         <div class="advantage advantage--world">
-          <h3 class="advantage__title">Весь мир</h3>
-          <p class="advantage__description">Возможность организации поставки оборудования, материалов, химии и запчастей любого типа сложности в любую точку мира</p>
+          <h3 class="advantage__title">Whole world</h3>
+          <p class="advantage__description">Supply of the equipment, materials and spare parts of any type to every corner of the world</p>
         </div>
         <div class="advantage advantage--mining">
-          <h3 class="advantage__title">Для горнодобывающего бизнеса</h3>
-          <p class="advantage__description">У нас есть полный перечень номенклатуры, необходимой для открытия и поддержания горнодобывающего бизнеса (геология, лаборатория, бурение, добыча, переработка, складирование, инфраструктура)</p>
+          <h3 class="advantage__title">Your leading mine business partner</h3>
+          <p class="advantage__description">According to Your individual needs we can organize the full-type regular system of supplying the whole list of materials and equipment needed to construct and maintain operational work of Your mining business (geology, laboratory analyses, drilling, raw materials factory processing, warehousing, infrastructure: living facilities, diesel generators, etc.</p>
         </div>
         <div class="advantage advantage--utilization">
-          <h3 class="advantage__title">Утилизация</h3>
-          <p class="advantage__description">Помощь в реализации б/у оборудования и техники, невостребованной химии, а также отходов горнорудного производства</p>
+          <h3 class="advantage__title">Utilization</h3>
+          <p class="advantage__description">Assistance in selling all the types of used equipment and machines, unclaimed chemicals and wastes of mining preproduction</p>
         </div>
         <div class="advantage advantage--fast">
-          <h3 class="advantage__title">Быстро</h3>
-          <p class="advantage__description">Короткие сроки поставки</p>
+          <h3 class="advantage__title">Fast</h3>
+          <p class="advantage__description">Short collection and delivery time</p>
         </div>
         <div class="advantage advantage--yes">
-          <h3 class="advantage__title">Без границ</h3>
-          <p class="advantage__description">Отработанные схемы поставок в санкционные страны</p>
+          <h3 class="advantage__title">Flexibility</h3>
+          <p class="advantage__description">Experience in supplying the companies located in sanctioned countries</p>
         </div>
       </div>
     </section>
@@ -170,29 +176,30 @@
       <div class="container">
         <div class="services__content">
           <div class="services__info">
-            <h2 class="services__title">Наши услуги</h2>
-            <p class="services__description">Мы готовы предоставить нашим клиентам услуги по всему спектру направлений, связанных с закупкой и логистикой: проведение тендеров, поставка материалов и обрудования, организация цепей поставок и логистики, пост-продажное обслуживание, консультирование и содействие в проведении таможенных процедур.</p>
-            <p class="services__description">Вы можете или разместить у нас заказ на поставку определенной номенклатуры товаров, или поручить нам проведение анализа рынка и сбора предложений с дальнейшим выбором наиболее выгодного технического, логистического и финансового решения под каждый конкретный заказ – после чего вы можете как реализовать закупку по выбранному варианту самостоятельно, так и разместить финальный заказ у нас, в качестве вашего надежного поставщика.</p>
-            <a href="#RequestCall" class="js-set-hvalue btn services__btn" data-hvalue="Наши услуги - разместить заказ">Разместить заказ</a>
+            <h2 class="services__title">OUR SERVICES</h2>
+            <p class="services__description">We are providing with all the supplying and procurement procedures and procedures our client needs: tendering, supplying, organization of the supply chain & logistics, after-sales service, customs procedures consulting and assistance.</p>
+            <p class="services__description">You can either place your order on an exact item with us to be supplied, or you can ask us to explore the market and find the best supply solution for you – after this you can either purchase what you need from the supplier/manufacturer you choose according to our biding results, or ask us to be your supplier. </p>
+            <a href="#RequestCall" class="js-set-hvalue btn services__btn" data-hvalue="Наши услуги - разместить заказ">Send request</a>
           </div>
-          <div class="services__slider">
-            <div class="services__big-slide"><img src="" alt=""></div>
-            <div class="services__small-slides">
-              <a href="" class="services__small-slide"><img src="" alt=""></a>
-              <a href="" class="services__small-slide"><img src="" alt=""></a>
-              <a href="" class="services__small-slide"><img src="" alt=""></a>
-            </div>
+          <div class="services__slider fotorama" data-nav="thumbs" data-arrows="true" data-loop="true" data-transitionduration="1000" data-transition="crossfade" data-autoplay="false">
+            <a href="img/big-slide1.jpg"><img src="img/big-slide1.jpg" width="180" height="110"></a>
+            <a href="img/big-slide2.jpg"><img src="img/big-slide2.jpg" width="180" height="110"></a>
+            <a href="img/big-slide3.jpg"><img src="img/big-slide3.jpg" width="180" height="110"></a>
+            <a href="img/big-slide4.jpg"><img src="img/big-slide4.jpg" width="180" height="110"></a>
+            <a href="img/big-slide5.jpg"><img src="img/big-slide5.jpg" width="180" height="110"></a>
+            <a href="img/big-slide6.jpg"><img src="img/big-slide6.jpg" width="180" height="110"></a>
           </div>
         </div>
 
         <div class="spare-parts">
           <div class="spare-part">
-            <div class="spare-part__image">
-              <img src="img/engine.jpg" srcset="img/engine@2x.jpg 2x" alt="SDLG" width="275" height="210">
+            <div class="spare-part__image fotorama" data-nav="false" data-autoplay="true" data-autoplay="2000" data-transitionduration="1000" data-transition="crossfade">
+              <img src="img/Equipment.jpg" srcset="img/Equipment@2x.jpg 2x" alt="Equipment" width="275" height="210">
+              <img src="img/engine.jpg" srcset="img/engine@2x.jpg 2x" alt="engine" width="275" height="210">
             </div>
             <div class="spare-part__order">
-              <div class="spare-part__name">Узлы и комплектующие</div>
-              <a href="#RequestCall" class="js-set-hvalue btn spare-part__buy" data-hvalue="Заказать Узлы и комплектующие">Заказать</a>
+              <div class="spare-part__name">Equipment & units</div>
+              <a href="#RequestCall" class="js-set-hvalue btn spare-part__buy" data-hvalue="Заказать Узлы и комплектующие">Send request</a>
             </div>
           </div>
 
@@ -201,8 +208,8 @@
               <img src="img/filters.jpg" srcset="img/filters@2x.jpg 2x" alt="SDLG" width="275" height="210">
             </div>
             <div class="spare-part__order">
-              <div class="spare-part__name">Фильтры</div>
-              <a href="#RequestCall" class="js-set-hvalue btn spare-part__buy" data-hvalue="Заказать Фильтры">Заказать</a>
+              <div class="spare-part__name">Filters</div>
+              <a href="#RequestCall" class="js-set-hvalue btn spare-part__buy" data-hvalue="Заказать Фильтры">Send request</a>
             </div>
           </div>
 
@@ -211,8 +218,8 @@
               <img src="img/tires.jpg" srcset="img/tires@2x.jpg 2x" alt="SDLG" width="275" height="210">
             </div>
             <div class="spare-part__order">
-              <div class="spare-part__name">Диски и Шины</div>
-              <a href="#RequestCall" class="js-set-hvalue btn spare-part__buy" data-hvalue="Заказать Диски и Шины">Заказать</a>
+              <div class="spare-part__name">Discs & Tires</div>
+              <a href="#RequestCall" class="js-set-hvalue btn spare-part__buy" data-hvalue="Заказать Диски и Шины">Send request</a>
             </div>
           </div>
 
@@ -221,8 +228,8 @@
               <img src="img/general-parts.jpg" srcset="img/general-parts@2x.jpg 2x" alt="SDLG" width="275" height="210">
             </div>
             <div class="spare-part__order">
-              <div class="spare-part__name">Различные группы запчастей</div>
-              <a href="#RequestCall" class="js-set-hvalue btn spare-part__buy" data-hvalue="Заказать Различные группы запчастей">Заказать</a>
+              <div class="spare-part__name">Various spare parts</div>
+              <a href="#RequestCall" class="js-set-hvalue btn spare-part__buy" data-hvalue="Заказать Различные группы запчастей">Send request</a>
             </div>
           </div>
         </div>
@@ -232,61 +239,61 @@
     <section class="experience" id="section-5">
       <div class="experience__block">
         <div class="experience__nubmer">2</div>
-        <h3 class="experience__title">Тонны золота в год</h3>
-        <p class="experience__description">Бесперебойное снабжение горнорудных предприятий с суммарным уровнем добычи 2 тонны золота в год</p>
+        <h3 class="experience__title">Tons of gold</h3>
+        <p class="experience__description">Regular supply of the mining production companies extracting 2 tons of gold annually</p>
       </div>
       <div class="experience__block experience__block--central">
         <div class="experience__nubmer">35%</div>
-        <h3 class="experience__title">Экономии бюджета</h3>
-        <p class="experience__description">Экономия бюджетных средств предприятий, заложенных под закупку оборудования и запчастей по рыночным ценам, до 35% в год за счет прямых поставок от производителей и индивидуальных логистических решений</p>
+        <h3 class="experience__title">Economy</h3>
+        <p class="experience__description">Economy of client’s procurement budget through direct supplies from the factories and wise logistics solutions up to 35% annually</p>
       </div>
       <div class="experience__block">
         <div class="experience__nubmer">4</div>
-        <h3 class="experience__title">Стороны света</h3>
-        <p class="experience__description">Мы уже работаем со странами ЮВА Ближнего Востока, СНГ и Африки, - и готовы развиваться дальше</p>
+        <h3 class="experience__title">World areas</h3>
+        <p class="experience__description">Our cooperation map already spreads to Asia, Middle East, Africa and CIS, including Russia - and we are ready to develop further</p>
       </div>
     </section>
 
     <section class="steps" id="section-6">
       <div class="container">
-        <h2 class="steps__title">Этапы сотрудничества</h2>
+        <h2 class="steps__title">STEPS OF COOPERATION</h2>
         <div class="steps__container">
           <div class="step">
             <div class="step__number">1</div>
-            <p class="step__description"><span>Постановка задачи:</span><br>Вы обращаетесь к нам любым удобным для Вас способом<br>(через сайт, по e-mail, skype или телефону)</p>
+            <p class="step__description"><span>Your order:</span><br>you are contacting us via the most convenient way<br>(web-site, e-mail, skype, phone call)</p>
           </div>
           <div class="step">
             <div class="step__number">2</div>
-            <p class="step__description"><span>Уточнение деталей:</span> типы, характеристики, модели и чертежные номера необходимой к поставке номенклатуры, пункт, способ, срок доставки</p>
+            <p class="step__description"><span>We specify the details</span>, type, specifications, models, part numbers of the materials and way, destination point and lead-time of supply</p>
           </div>
           <div class="step">
             <div class="step__number">3</div>
-            <p class="step__description"><span>Предложение:</span> мы предлагаем Вам варианты по производителям, ценам, срокам, техническим характеристикам, условиям поставки и оплаты</p>
+            <p class="step__description"><span>Our offer:</span> we provide you with our offer, including different options of supply, including: brand, price, lead-time, analogues or additional technical specifications, supply and payment terms</p>
           </div>
           <div class="step">
             <div class="step__number">4</div>
-            <p class="step__description">Мы обсуждаем и согласуем с вами вариант, подходящий именно Вам</p>
+            <p class="step__description">We discuss and confirm the most <span>convenient</span> option for you</p>
           </div>
           <div class="step">
             <div class="step__number">5</div>
-            <p class="step__description">Мы организуем поставку</p>
+            <p class="step__description">We supply</p>
           </div>
           <div class="step">
             <div class="step__number">6</div>
-            <p class="step__description">Мы с Вами налаживаем долгосрочное <span>сотрудничество</span></p>
+            <p class="step__description">We establish long-term <span>cooperation</span> with you</p>
           </div>
         </div>
-        <a href="#RequestCall" class="js-set-hvalue btn steps__btn" data-hvalue="Поставить задачу">Поставить задачу</a>
+        <a href="#RequestCall" class="js-set-hvalue btn steps__btn" data-hvalue="Поставить задачу">Send request</a>
       </div>
     </section>
 
     <section class="why-us">
       <div class="container">
         <div class="why-us__padding">
-          <h2 class="why-us__title">Мы можем помочь Вам</h2>
-          <p class="why-us__description">Мы всегда открыты для сотрудничества– в том числе готовы рассмотреть ваши предложения по формам кооперации, не описанным в качестве предлагаемых нами по умолчанию. Просто обратитесь к нам, опишите свой вопрос – и мы вместе найдем пути решения и помощи вам. Наша приоритетная задача – быть по-настоящему полезными.</p>
-          <p class="why-us__description">Помимо всего прочего, мы можем предложить вам сотрудничество по форме аутсорсинговых закупок – когда вы размещаете нам самые различные заказы, и мы обрабатываем и исполняем их в качестве удаленного отдела закупок вашей компании: мы собираем предложения и квотации от поставщиков, мы выбираем наиболее выгодные варианты по параметрам цена/качество/сроки поставки, организуем проведение экспортных процедур на вывоз заказанной номенклатуры из страны производителя/поставщика, а также разрабатываем логистическое решение доставки до выбранного Вами пункта назначения.</p>
-          <p class="why-us__description">Кроме того, в ряде случаев мы готовы работать со странами, находящимися под санкциями, как вопросах оплаты, так и непосредственной поставки – что, несомненно, является важным фактором в сегодняшней среде мировой торговли.</p>
+          <h2 class="why-us__title">WE CAN HELP YOU</h2>
+          <p class="why-us__description">We are flexible with your offerings, so any other options and ways of supply cooperation, which are not mentioned here, can also be possible – just contact us and describe your situation, and we will find the ways to assist you. Being really helpful – is our main aim.</p>
+          <p class="why-us__description">We can provide you with outsourced procurement – you are placing an order on the item with us and we are executing as the procurement department of your company: we collect quotations from the suppliers, we choose the best pricing/quality/lead-time option, organize exporting procedures from the country the supplier/manufacturer is located and logistics of the items to be delivered to you.</p>
+          <p class="why-us__description">Together with this we are ready both to get payments from the sanctioned countries and supply equipment and spare parts to these countries – which is rather important today.</p>
         </div>
       </div>
     </section>
@@ -307,7 +314,7 @@
 
           <div class="footer__contact">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60" width="28" height="28"><g><path d="M30 0C13.458 0 0 13.458 0 30s13.458 30 30 30 30-13.458 30-30S46.542 0 30 0zm0 58C14.56 58 2 45.44 2 30S14.56 2 30 2s28 12.56 28 28-12.56 28-28 28z"/><path d="M31 26.02V15.88a1 1 0 0 0-2 0v10.14a3.995 3.995 0 0 0-2.858 2.86H19a1 1 0 0 0 0 2h7.142c.447 1.72 2 3 3.858 3 2.206 0 4-1.795 4-4 0-1.86-1.28-3.412-3-3.86zm-1 5.86c-1.103 0-2-.898-2-2s.897-2 2-2 2 .896 2 2-.897 2-2 2zM30 9.88a1 1 0 0 0 1-1v-1a1 1 0 0 0-2 0v1a1 1 0 0 0 1 1zM30 49.88a1 1 0 0 0-1 1v1a1 1 0 0 0 2 0v-1a1 1 0 0 0-1-1zM52 28.88h-1a1 1 0 0 0 0 2h1a1 1 0 0 0 0-2zM9 28.88H8a1 1 0 0 0 0 2h1a1 1 0 0 0 0-2zM44.85 13.615l-.708.707a1 1 0 0 0 1.414 1.414l.707-.707a1 1 0 0 0-1.414-1.415zM14.444 44.02l-.707.708a1 1 0 0 0 1.414 1.414l.708-.707a1 1 0 1 0-1.414-1.414zM45.556 44.02a1 1 0 0 0-1.414 1.415l.707.707a.997.997 0 0 0 1.413 0 1 1 0 0 0 0-1.414l-.707-.707zM15.15 13.615a1 1 0 0 0-1.413 1.414l.707.706a.997.997 0 0 0 1.414 0 1 1 0 0 0 0-1.414l-.707-.707z"/></g></svg>
-            <span class="footer__contacts footer__contacts--time">Пн-Пт: 09:00 - 18:00<br>Сб-Вс: 10:00 - 14:00</span>
+            <span class="footer__contacts footer__contacts--time">Mon-Fri: 09:00 - 18:00<br>Sat-Sun: 10:00 - 14:00</span>
           </div>
 
           <div class="footer__contact">
@@ -325,13 +332,13 @@
       </div>
       <div class="footer__row footer__row--promo">
         <div class="container">
-          <p class="footer__company-description"><span>Nord Star Trading</span> - Ваш полярный путеводитель в мире закупок</p>
-          <a href="#RequestCall" class="js-set-hvalue btn btn--white" data-hvalue="Заказать звонок">Заказать звонок</a>
+          <p class="footer__company-description"><span>Nord Star Trading</span> - your astra-leading supply chain guide</p>
+          <a href="#RequestCall" class="js-set-hvalue btn btn--white" data-hvalue="Заказать звонок">Give me a call</a>
         </div>
       </div>
       <div class="footer__row footer__row--copyright">
         <div class="container">
-          <p class="footer__copyright">© 2016 Nord Star Trading | Все права защищены</p>
+          <p class="footer__copyright">© 2016 Nord Star Trading | All rights reserved</p>
         </div>
       </div>
     </footer>
@@ -352,5 +359,26 @@
 				});
 			})(jQuery);
 		</script>
+
+    <script>
+
+        // Set options
+        var options = {
+            offset: '#showHere',
+            offsetSide: 'top',
+            classes: {
+                clone:   'banner--clone',
+                stick:   'banner--stick',
+                unstick: 'banner--unstick'
+            }
+        };
+
+        // Initialise with options
+        var banner = new Headhesive('.banner', options);
+
+        // Headhesive destroy
+        // banner.destroy();
+    </script>
+
 	</body>
 </html>

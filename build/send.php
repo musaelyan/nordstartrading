@@ -38,7 +38,7 @@ $subject='Письмо с сайта NORD STAR TRADING LIMITED' .$callme;
 
 
 
-$to = "dvshvedov@gmail.com";
+$to = "info@nordstartrading.com";
 
 $message = "".$callme."Вам оставлена заявка со следующей информацией:"."\n<br><br>Cекция: ".$section."\n<br>Имя: ".$name."\n<br>Телефон/Email: ".$phone."\n<br>Комментарий: ".$message;
 $headers = 'From: info@nordstartrading.com' . "\r\n" . 'Reply-To: ' . $formEmail .  "\r\n" .'X-Mailer: Adobe Muse 7.3.5 with PHP/' . phpversion() . "\r\n" . 'Content-type: text/html; charset=utf-8' . "\r\n";

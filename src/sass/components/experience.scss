@@ -9,11 +9,11 @@
     display: inline-block;
     vertical-align: top;
     box-sizing: border-box;
-    padding: 50px 8%;
+    padding: 65px 8% 50px;;
     text-align: center;
 
     @media ($tablet-1024) {
-      padding: 50px 5%;
+      padding: 80px 5% 50px;;
     }
 
     @media ($mobile-width) {
